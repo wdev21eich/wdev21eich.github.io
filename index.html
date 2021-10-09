@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <!-- Notre premier code JavaScript -->
+  <!-- Lien : https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/A_first_splash -->
   <head>
-    <meta charset="utf-8" />
-    <title>My test page</title>
-    <link
-      href="http://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- lien vers la page css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- S'affiche dans l'onglet -->
+    <title>Number guessing game1</title>
   </head>
   <body>
-    <h1>Mozilla is cool</h1>
-    <img
-      src="images/firefox-icon.png"
-      alt="The Firefox logo: a flaming fox surrounding the Earth."
-    />
+    <!-- S'affiche en titre de la page -->
+    <h1>Number guessing game2</h1>
 
-    <p>At Mozilla, we’re a global community of</p>
-
-    <ul>
-      <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
+    <h2>Hello world 2021 !!!</h2>
 
     <p>
-      working together to keep the Internet alive and accessible, so people
-      worldwide can be informed contributors and creators of the Web. We believe
-      this act of human collaboration across an open platform is essential to
-      individual growth and our collective future.
+      We have selected a random number between 1 and 100. See if you can guess
+      it in 10 turns or fewer. We'll tell you if your guess was too high or too
+      low.
     </p>
 
-    <p>
-      Read the
-      <a href="https://www.mozilla.org/en-US/about/manifesto/"
-        >Mozilla Manifesto</a
-      >
-      to learn even more about the values and principles that guide the pursuit
-      of our mission.
-    </p>
-    <!-- Bouton ajouté en lien avec 'main4.js' -->
-    <button>Changer d'utilisateur</button>
-    <script src="scripts/main4.js"></script>
+    <div class="form">
+      <!-- Les deux variables suivantes stockent des références au champ de saisie 
+        du formulaire et au bouton de soumission ; elles sont utilisées pour 
+        écouter l'envoi de la supposition (guess) plus tard -->
+      <label for="guessField">Enter a guess: </label>
+      <input type="text" id="guessField" class="guessField" />
+      <input type="submit" value="Submit guess" class="guessSubmit" />
+    </div>
+
+    <div class="resultParas">
+      <!-- Les trois variables suivantes sont chacune faite pour stocker une 
+        référence aux paragraphes de résultats dans le HTML ; elles sont 
+        utilisées pour insérer des valeurs dans les paragraphes plus tard dans le code -->
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
